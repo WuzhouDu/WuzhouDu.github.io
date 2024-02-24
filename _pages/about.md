@@ -1,13 +1,12 @@
 ---
 permalink: /
-title: 
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# About me
 I'm a Computer Science and Engineering undergradute student in [The Chinese University of Hong Kong, Shenzhen (CUHKSZ)](https://www.cuhk.edu.cn/en). I'm expected to graduate at the spring semester of 2024. Now I am applying to several master programs at accredited instituions in the U.S. and Europe. 
 
 I'm interested in software development and have experience in web and mobile app development. My technical skills include React, Flutter, and Node.js. Now I'm trianing my skills in Go.
