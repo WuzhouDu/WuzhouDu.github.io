@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Wuzhou Du"
 title_separator          : "-"
-name                     : &name "Wuzhou Du"
+# name                     : &name "Wuzhou Du"
 description              : &description "Personal Website"
 url                      : https://wuzhoudu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Wuzhou Du"
   pronouns         : # example: "she/her"  
-  # bio              : "Short biography for the left-hand sidebar"
+  bio              : "A Computer Science and Engineering student at CUHKSZ."
   location         : "Shenzhen, China"
   employer         : "CUHK(SZ)"
   uri              : # URL
