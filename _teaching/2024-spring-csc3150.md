@@ -16,4 +16,5 @@ This project is basically from the [memory map lab](https://pdos.csail.mit.edu/6
 
 Delivery of Tutorials
 ----
-The tutorial slides are to be anounced soon.
+The tutorial slide can be found <a href="https://wuzhoudu.github.io/files/24-spring-csc3150/project3_tutorial.pptx" download="">here</a>.
+I have also prepared a document to help students review the background knowledge of this project. The prerequisite knowledge document can be found <a href="https://wuzhoudu.github.io/files/24-spring-csc3150/Prerequisite_Knowledge.pdf">here</a>.
