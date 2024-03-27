@@ -5,8 +5,8 @@ author_profile: true
 ---
 
 ## CSAPP Datalab
-*[CMU15-213 Course Lab](https://github.com/WuzhouDu/CSAPP_labs)*, Ongoing
-- ongoing now, almost finished :)
+*[CMU15-213 Course Lab](https://github.com/WuzhouDu/CSAPP_labs)*, March 2024
+- Finish all the datalab puzzles with [full mark](https://wuzhoudu.github.io/files/CSAPP_labs/datalab_result.jpg) :)
 
 ## Compiler Construction
 *Compiler Course Projects*, Feburary 2024 - now
