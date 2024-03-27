@@ -7,6 +7,7 @@ author_profile: true
 ## CSAPP Datalab
 *[CMU15-213 Course Lab](https://github.com/WuzhouDu/CSAPP_labs)*, March 2024
 - Finish all the datalab puzzles with [full mark](https://wuzhoudu.github.io/files/CSAPP_labs/datalab_result.jpg) :)
+- Gain proficiency in bitwise operations (expecially the usage of exclusive or), integer and floating point representation in C programming.
 
 ## Compiler Construction
 *Compiler Course Projects*, Feburary 2024 - now
