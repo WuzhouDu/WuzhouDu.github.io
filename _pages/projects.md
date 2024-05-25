@@ -4,6 +4,16 @@ title: "Projects"
 author_profile: true
 ---
 
+## Hotel Reservation System
+[MERN Full Stack Project](https://github.com/WuzhouDu/MERN-Booking), April 2024 – May 2024
+
+**Tech Stack:** MERN, TypeScript, Tailwind CSS, React Query, JsonWebToken, Cloudinary, Stripe, Playwright
+- Data Management with React Hooks and React Query: Managed component state using hooks like useState and useEffect; managed global state using useContext. Fetched and mutated data from the server using useQuery and useMutation, which also handled caching to reduce unnecessary network requests and enhance user experience. Managed form state with useForm and created types to abstract form data types.
+- JWT Authentication: Implemented user authentication and authorization using JWT to secure API endpoints and protect user data. Upon successful login, the server generates a JWT and stores it in the client's cookies to enable persistent login.
+- Image Upload and Storage: Used Multer to handle user-uploaded images, temporarily storing them in memory. Uploaded images to Cloudinary for cloud storage and returned the image URLs for frontend display.
+- Styling with Tailwind CSS: Utilized Tailwind CSS to quickly build responsive layouts, ensuring consistent display across different devices. Modularized CSS for better maintainability and reusability of styles.
+- Testing with Playwright: Wrote Playwright scripts to simulate user interactions and test key workflows, such as user registration, login, and hotel booking. Created a separate MongoDB test database to avoid impacting production data and used different environment variables to ensure the separation and security of development, testing, and production environments.
+
 ## CSAPP Datalab
 *[CMU15-213 Course Lab](https://github.com/WuzhouDu/CSAPP_labs)*, March 2024
 - Finish all the datalab puzzles with [full mark](https://wuzhoudu.github.io/files/CSAPP_labs/datalab_result.jpg) :)
