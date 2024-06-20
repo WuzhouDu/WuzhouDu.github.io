@@ -24,11 +24,11 @@ author:
   avatar           : "profile.jpg"
   name             : "Wuzhou Du"
   pronouns         : # example: "she/her"  
-  bio              : "A Computer Science and Engineering student at CUHKSZ."
-  location         : "Shenzhen, China"
-  employer         : "CUHK(SZ)"
+  bio              : "A Computer Science and Engineering student at UCSD."
+  location         : "La Jolla, CA, USA"
+  employer         : "UCSD"
   uri              : # URL
-  email            : "wuzhoudu@link.cuhk.edu.cn" 
+  email            : "wudu@ucsd.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -61,7 +61,7 @@ author:
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : 101zzzzz # Username
+  steam            : # 101zzzzz # Username
   telegram         : # URL
   tumblr           : # Username
   # twitter          : "UniofOxford"  # Replace this with your X / Twitter handle

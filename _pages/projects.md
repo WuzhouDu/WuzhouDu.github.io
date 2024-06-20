@@ -20,19 +20,15 @@ author_profile: true
 - Gain proficiency in bitwise operations (expecially the usage of exclusive or), integer and floating point representation in C programming.
 
 ## Compiler Construction
-*Compiler Course Projects*, Feburary 2024 - now
+*Compiler Course Projects*, Feburary 2024 - May 2024
 - Utilized Flex and Bison to build a compiler for Micro language, including lexical analysis, syntactical analysis, and generate LLVM IR. Then, optimized the generated LLVM IR with LLVM and finally generate the executable code.
+- Built a scanner and parser for Oat language from scratch with finite state machine, Tompson Formula; generated the concrete and abstract syntax tree.
+- Implemented a type checker, a code generator, and a register allocator for Oat language using Python LLVM lite, which can generate the executable code for the Oat language.
 
 ## Parallel Programming Acceleration
 *Parallel Programming Course Projects*, September 2023 - December 2023
 - Leveraged MPI (Message Passing Interface), SIMD (AVX-512), Pthread, OpenMP, CUDA, and OpenACC to handle image processing problems, including image softening and RGB to grayscale problems, reaching a maximum of 248x speedup.
 - Leveraged tiling, MPI, SIMD (AVX-512), OpenMP, and CUDA to accelerate dense matrix multiplication problem, sorting algorithms (quick sort, bucket sort, merge sort, and odd-even sort), softmax regression and neural networks, reaching a maximum of 447x speedup.
-
-## "LingoTask" Flutter Development
-*SpeechX Ltd.*, July 2023 - September 2023
-- Employed the singleton pattern to encapsulate SQLite database utilization, reducing over 100 redundant SQL statements. This database utilization class was instrumental in persisting user data and ensuring the app’s offline functionality.
-- Designed and implemented a network utilization class, which intercepted HTTP requests and responses to add user tokens for authorization and handle server errors, enhancing the app's security and reliability.
-- Uploaded 6 versions of the app to TestFlight for testing and contributed over 5,000 lines of code to create compatible and user-friendly UI layouts in different screen sizes using responsive Material widgets and the ScreenUtil package.
 
 ## Program Analysis with AST
 *Software Engineering Course Project*, April 2023
@@ -48,12 +44,6 @@ author_profile: true
 - Utilized C POSIX library function to fork a child process to execute over 15 different test programs, each with a different signal raised, after which the parent process gave feedback on the child process execution. The program passed all 15 cases.
 - Traced the Linux kernel source code to self-implemented `fork` and `wait` functions, with which the program finished similar tasks to the above and passed all cases.
 - Developed a thread pool with a FIFO queue using pthread and mutex locks to handle many HTTP requests. It achieved a throughput mean of 7151.03 requests per second with 10 threads.
-
-## "The Fall" Unity Game Development
-*Versee Technology*, June 2022 - August 2022
-- Investigated the project’s hand gesture and head motion capture C# scripts while mastering the basic Meta Oculus APIs within 4 days; optimized these core scripts, reducing the codebase by 1/7 and making the finger bent angle detection more accurate.
-- Developed custom C# scripts responsible for aligning in-game character collision volumes with the physical movements of players wearing VR headsets, enhancing the immersion experience of the VR game.
-- Acquired proficiency in Unreal Engine 5 within one week and developed a C++ class to manage the player’s movement in a microgravity environment like a spacecraft, which gained high acclaim and recognition from the test players.
 
 ## Photography Reservation System
 *Database Course Project*, March 2022
