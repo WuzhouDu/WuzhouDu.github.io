@@ -4,6 +4,10 @@ title: "Projects"
 author_profile: true
 ---
 
+## CSAPP Bomb Lab
+*[CMU15-213 Course Lab2](https://wuzhoudu.github.io/posts/2024/07/csapp/bomblab-day1&2)*, July 2024
+- Defuse all the six phases of the handout bomb!
+
 ## Hotel Reservation System
 [MERN Full Stack Project](https://github.com/WuzhouDu/MERN-Booking), April 2024 – May 2024
 
