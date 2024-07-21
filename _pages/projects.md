@@ -4,6 +4,12 @@ title: "Projects"
 author_profile: true
 ---
 
+## CMU 15-445 Database Systems
+*[CMU 15-445 Course Project 0](https://15445.courses.cs.cmu.edu/spring2023/project0/)*, July 2024
+- Implemented a COW (Copy-On-Write) Trie data structure to store the key-value pairs in the database, which can handle the get, put and delete operations concurrently. 
+- Gain the full mark of 100/100 in the [project0](https://WuzhouDu.github.io/files/CMU%2015-445/p0_full_mark.jpg).
+
+
 ## CSAPP Bomb Lab
 *[CMU15-213 Course Lab2](https://wuzhoudu.github.io/posts/2024/07/csapp/bomblab-day1&2)*, July 2024
 - Defuse all the six phases of the handout bomb!
