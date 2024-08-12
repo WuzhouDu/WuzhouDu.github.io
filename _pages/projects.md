@@ -5,7 +5,14 @@ author_profile: true
 ---
 
 ## CMU 15-445 Database Systems
-*[CMU 15-445 Course Project 0](https://15445.courses.cs.cmu.edu/spring2023/project0/)*, July 2024
+*[Buffer Pool Manager](https://15445.courses.cs.cmu.edu/spring2023/project1/)*, August 2024
+- Implemented the **LRU-K replacement** policy to manage the memory frame eviction; developed a **buffer pool manager kernel** to handle concurrent page fetching, deletion, and eviction.
+- Utilized **RAII** (Resource Acquisition Is Initialization) policy to encapsulate the page object, achieving the **auto-management** of the pin count decrease and read/write latch release on page’s initialization and destruction.
+- Optimized the **granularity of latches**, e.g. page table latch and LRU-K replacer latch to **hide the latency of the disk I/O**, reaching a peformance of **58482.17942 QPS** under the benchmark, which **ranked 31** on the leaderboard.
+- Acheived the **full mark** of 100/100 in the [project1](https://WuzhouDu.github.io/files/CMU%2015-445/p1_perfect_score.jpg). Ranked [31](https://WuzhouDu.github.io/files/CMU%2015-445/p1_leaderboard.jpg) on the leaderboard.
+
+## CMU 15-445 Database Systems
+*[Copy-on-Write Tree](https://15445.courses.cs.cmu.edu/spring2023/project0/)*, July 2024
 - Implemented a COW (Copy-On-Write) Trie data structure to store the key-value pairs in the database, which can handle the get, put and delete operations concurrently. 
 - Gain the full mark of 100/100 in the [project0](https://WuzhouDu.github.io/files/CMU%2015-445/p0_full_mark.jpg).
 
