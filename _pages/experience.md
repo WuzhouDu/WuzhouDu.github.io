@@ -9,7 +9,7 @@ author_profile: true
 *Flutter Software Engineer Intern | Dart, SQLite, Git*
 -	Developed compatible and user-friendly UI layouts in different screen sizes using responsive Material widgets and ScreenUtil package, bringing over 500 middle school students with new reading and listening exercise features.
 -	Employed the singleton pattern to encapsulate SQLite database utilization, reducing over 100 redundant SQL statements; refactored a database management process with transaction control to allow multiple synchronous queries and modifications, reducing code coupling by 42% and database response time by 30%.
--	Designed and implemented a network utilization class, which intercepted HTTP requests and responses to add user tokens for authorization and handle server errors, reducing the app's error messages by 20%.
+-	Designed and implemented a network utilization class, which intercepted https requests and responses to add user tokens for authorization and handle server errors, reducing the app's error messages by 20%.
 
 
 ## Unity Client Developer

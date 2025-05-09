@@ -26,21 +26,21 @@ Single line blockquote:
 
 ## Tables
 
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
+| Entry         | Item |                                     |
+| ------------- | ---- | ----------------------------------- |
+| [John Doe](#) | 2016 | Description of the item in the list |
+| [Jane Doe](#) | 2019 | Description of the item in the list |
+| [Doe Doe](#)  | 2022 | Description of the item in the list |
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
+| Header1                       | Header2 | Header3 |
+| :---------------------------- | :-----: | ------: |
+| cell1                         |  cell2  |   cell3 |
+| cell4                         |  cell5  |   cell6 |
+| ----------------------------- |
+| cell1                         |  cell2  |   cell3 |
+| cell4                         |  cell5  |   cell6 |
+| ============================= |
+| Foot1                         |  Foot2  |   Foot3 |
 
 ## Definition Lists
 
@@ -105,7 +105,7 @@ Make any link standout more when applying the `.btn` class.
 
 ### Anchor Tag (aka. Link)
 
-This is an example of a [link](http://github.com "Github").
+This is an example of a [link](https://github.com "Github").
 
 ### Abbreviation Tag
 

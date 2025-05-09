@@ -1,10 +1,10 @@
 
-	/*
-	 Leaflet.markercluster, Provides Beautiful Animated Marker Clustering functionality for Leaflet, a JS library for interactive maps.
-	 https://github.com/Leaflet/Leaflet.markercluster
-	 (c) 2012-2013, Dave Leaver, smartrak
-	*/
-	(function (window, document, undefined) {/*
+/*
+ Leaflet.markercluster, Provides Beautiful Animated Marker Clustering functionality for Leaflet, a JS library for interactive maps.
+ https://github.com/Leaflet/Leaflet.markercluster
+ (c) 2012-2013, Dave Leaver, smartrak
+*/
+(function (window, document, undefined) {/*
 	 * L.MarkerClusterGroup extends L.FeatureGroup by clustering the markers contained within
 	 */
 
@@ -186,14 +186,14 @@
 			}
 
 			var fg = this._featureGroup,
-			    npg = this._nonPointGroup,
-			    chunked = this.options.chunkedLoading,
-			    chunkInterval = this.options.chunkInterval,
-			    chunkProgress = this.options.chunkProgress,
-			    l = layersArray.length,
-			    offset = 0,
-			    originalArray = true,
-			    m;
+				npg = this._nonPointGroup,
+				chunked = this.options.chunkedLoading,
+				chunkInterval = this.options.chunkInterval,
+				chunkProgress = this.options.chunkProgress,
+				l = layersArray.length,
+				offset = 0,
+				originalArray = true,
+				m;
 
 			if (this._map) {
 				var started = (new Date()).getTime();
@@ -215,7 +215,7 @@
 						// - Total increases, so chunkProgress ratio jumps backward.
 						// - Groups are not included in this group, only their non-group child layers (hasLayer).
 						// Changing array length while looping does not affect performance in current browsers:
-						// http://jsperf.com/for-loop-changing-length/6
+						// https://jsperf.com/for-loop-changing-length/6
 						if (m instanceof L.LayerGroup) {
 							if (originalArray) {
 								layersArray = layersArray.slice();
@@ -242,7 +242,7 @@
 						if (m.__parent) {
 							if (m.__parent.getChildCount() === 2) {
 								var markers = m.__parent.getAllChildMarkers(),
-								    otherMarker = markers[0] === m ? markers[1] : markers[0];
+									otherMarker = markers[0] === m ? markers[1] : markers[0];
 								fg.removeLayer(otherMarker);
 							}
 						}
@@ -304,10 +304,10 @@
 		//Takes an array of markers and removes them in bulk
 		removeLayers: function (layersArray) {
 			var i, m,
-			    l = layersArray.length,
-			    fg = this._featureGroup,
-			    npg = this._nonPointGroup,
-			    originalArray = true;
+				l = layersArray.length,
+				fg = this._featureGroup,
+				npg = this._nonPointGroup,
+				originalArray = true;
 
 			if (!this._map) {
 				for (i = 0; i < l; i++) {
@@ -338,7 +338,7 @@
 
 				// Work on a copy of the array, so that next loop is not affected.
 				var layersArray2 = layersArray.slice(),
-				    l2 = l;
+					l2 = l;
 				for (i = 0; i < l2; i++) {
 					m = layersArray2[i];
 
@@ -473,7 +473,7 @@
 		//Overrides LayerGroup.getLayer, WARNING: Really bad performance
 		getLayer: function (id) {
 			var result = null;
-			
+
 			id = parseInt(id, 10);
 
 			this.eachLayer(function (l) {
@@ -511,9 +511,9 @@
 
 		//Zoom down to show the given layer (spiderfying if necessary) then calls the callback
 		zoomToShowLayer: function (layer, callback) {
-			
+
 			if (typeof callback !== 'function') {
-				callback = function () {};
+				callback = function () { };
 			}
 
 			var showMarker = function () {
@@ -649,8 +649,8 @@
 		 * @private
 		 */
 		_removeFromGridUnclustered: function (marker, z) {
-			var map             = this._map,
-			    gridUnclustered = this._gridUnclustered;
+			var map = this._map,
+				gridUnclustered = this._gridUnclustered;
 
 			for (; z >= 0; z--) {
 				if (!gridUnclustered[z].removeObject(marker, map.project(marker.getLatLng(), z))) {
@@ -773,9 +773,9 @@
 
 		_bindEvents: function () {
 			var map = this._map,
-			    spiderfyOnMaxZoom = this.options.spiderfyOnMaxZoom,
-			    showCoverageOnHover = this.options.showCoverageOnHover,
-			    zoomToBoundsOnClick = this.options.zoomToBoundsOnClick;
+				spiderfyOnMaxZoom = this.options.spiderfyOnMaxZoom,
+				showCoverageOnHover = this.options.showCoverageOnHover,
+				zoomToBoundsOnClick = this.options.zoomToBoundsOnClick;
 
 			//Zoom on cluster click or spiderfy if we are at the lowest level
 			if (spiderfyOnMaxZoom || zoomToBoundsOnClick) {
@@ -792,7 +792,7 @@
 
 		_zoomOrSpiderfy: function (e) {
 			var cluster = e.layer,
-			    bottomCluster = cluster;
+				bottomCluster = cluster;
 
 			while (bottomCluster._childClusters.length === 1) {
 				bottomCluster = bottomCluster._childClusters[0];
@@ -879,7 +879,7 @@
 			var maxZoom = this._map.getMaxZoom(),
 				radius = this.options.maxClusterRadius,
 				radiusFn = radius;
-		
+
 			//If we just set maxClusterRadius to a single number, we need to create
 			//a simple function to return that number. Otherwise, we just have to
 			//use the function we've passed in.
@@ -893,7 +893,7 @@
 			this._maxZoom = maxZoom;
 			this._gridClusters = {};
 			this._gridUnclustered = {};
-		
+
 			//Set up DistanceGrids for each zoom
 			for (var zoom = maxZoom; zoom >= 0; zoom--) {
 				this._gridClusters[zoom] = new L.DistanceGrid(radiusFn(zoom));
@@ -907,8 +907,8 @@
 		//Zoom: Zoom to start adding at (Pass this._maxZoom to start at the bottom)
 		_addLayer: function (layer, zoom) {
 			var gridClusters = this._gridClusters,
-			    gridUnclustered = this._gridUnclustered,
-			    markerPoint, z;
+				gridUnclustered = this._gridUnclustered,
+				markerPoint, z;
 
 			if (this.options.singleMarkerMode) {
 				this._overrideMarkerIcon(layer);
@@ -1079,8 +1079,8 @@
 		 */
 		_extractNonGroupLayers: function (group, output) {
 			var layers = group.getLayers(),
-			    i = 0,
-			    layer;
+				i = 0,
+				layer;
 
 			output = output || [];
 
@@ -1157,16 +1157,16 @@
 
 			_animationZoomIn: function (previousZoomLevel, newZoomLevel) {
 				var bounds = this._getExpandedVisibleBounds(),
-				    fg     = this._featureGroup,
-				    i;
+					fg = this._featureGroup,
+					i;
 
 				this._ignoreMove = true;
 
 				//Add all children of current clusters to map and remove those clusters from map
 				this._topClusterLevel._recursively(bounds, previousZoomLevel, 0, function (c) {
 					var startPos = c._latlng,
-					    markers  = c._markers,
-					    m;
+						markers = c._markers,
+						m;
 
 					if (!bounds.contains(startPos)) {
 						startPos = null;
@@ -1233,7 +1233,7 @@
 
 			_animationAddLayer: function (layer, newCluster) {
 				var me = this,
-				    fg = this._featureGroup;
+					fg = this._featureGroup;
 
 				fg.addLayer(layer);
 				if (newCluster !== layer) {
@@ -1479,11 +1479,11 @@
 
 		_recalculateBounds: function () {
 			var markers = this._markers,
-			    childClusters = this._childClusters,
-			    latSum = 0,
-			    lngSum = 0,
-			    totalCount = this._childCount,
-			    i, child, childLatLng, childCount;
+				childClusters = this._childClusters,
+				latSum = 0,
+				lngSum = 0,
+				totalCount = this._childCount,
+				i, child, childLatLng, childCount;
 
 			// Case where all markers are removed from the map and we are left with just an empty _topClusterLevel.
 			if (totalCount === 0) {
@@ -1691,8 +1691,8 @@
 		// runAtBottomLevel: function that takes an L.MarkerCluster as an argument that should be applied at only the bottom level
 		_recursively: function (boundsToApplyTo, zoomLevelToStart, zoomLevelToStop, runAtEveryLevel, runAtBottomLevel) {
 			var childClusters = this._childClusters,
-			    zoom = this._zoom,
-			    i, c;
+				zoom = this._zoom,
+				i, c;
 
 			if (zoomLevelToStart > zoom) { //Still going down to required depth, just recurse to child clusters
 				for (i = childClusters.length - 1; i >= 0; i--) {
@@ -1741,18 +1741,18 @@
 
 
 	L.Marker.include({
-		
+
 		clusterHide: function () {
 			this.options.opacityWhenUnclustered = this.options.opacity || 1;
 			return this.setOpacity(0);
 		},
-		
+
 		clusterShow: function () {
 			var ret = this.setOpacity(this.options.opacity || this.options.opacityWhenUnclustered);
 			delete this.options.opacityWhenUnclustered;
 			return ret;
 		}
-		
+
 	});
 
 
@@ -1763,18 +1763,18 @@
 		this._cellSize = cellSize;
 		this._sqCellSize = cellSize * cellSize;
 		this._grid = {};
-		this._objectPoint = { };
+		this._objectPoint = {};
 	};
 
 	L.DistanceGrid.prototype = {
 
 		addObject: function (obj, point) {
 			var x = this._getCoord(point.x),
-			    y = this._getCoord(point.y),
-			    grid = this._grid,
-			    row = grid[y] = grid[y] || {},
-			    cell = row[x] = row[x] || [],
-			    stamp = L.Util.stamp(obj);
+				y = this._getCoord(point.y),
+				grid = this._grid,
+				row = grid[y] = grid[y] || {},
+				cell = row[x] = row[x] || [],
+				stamp = L.Util.stamp(obj);
 
 			this._objectPoint[stamp] = point;
 
@@ -1789,11 +1789,11 @@
 		//Returns true if the object was found
 		removeObject: function (obj, point) {
 			var x = this._getCoord(point.x),
-			    y = this._getCoord(point.y),
-			    grid = this._grid,
-			    row = grid[y] = grid[y] || {},
-			    cell = row[x] = row[x] || [],
-			    i, len;
+				y = this._getCoord(point.y),
+				grid = this._grid,
+				row = grid[y] = grid[y] || {},
+				cell = row[x] = row[x] || [],
+				i, len;
 
 			delete this._objectPoint[L.Util.stamp(obj)];
 
@@ -1814,7 +1814,7 @@
 
 		eachObject: function (fn, context) {
 			var i, j, k, len, row, cell, removed,
-			    grid = this._grid;
+				grid = this._grid;
 
 			for (i in grid) {
 				row = grid[i];
@@ -1835,11 +1835,11 @@
 
 		getNearObject: function (point) {
 			var x = this._getCoord(point.x),
-			    y = this._getCoord(point.y),
-			    i, j, k, row, cell, len, obj, dist,
-			    objectPoint = this._objectPoint,
-			    closestDistSq = this._sqCellSize,
-			    closest = null;
+				y = this._getCoord(point.y),
+				i, j, k, row, cell, len, obj, dist,
+				objectPoint = this._objectPoint,
+				closestDistSq = this._sqCellSize,
+				closest = null;
 
 			for (i = y - 1; i <= y + 1; i++) {
 				row = this._grid[i];
@@ -1870,7 +1870,7 @@
 
 		_sqDist: function (p, p2) {
 			var dx = p2.x - p.x,
-			    dy = p2.y - p.y;
+				dy = p2.y - p.y;
 			return dx * dx + dy * dy;
 		}
 	};
@@ -1878,7 +1878,7 @@
 
 	/* Copyright (c) 2012 the authors listed at the following URL, and/or
 	the authors of referenced articles or incorporated external code:
-	http://en.literateprograms.org/Quickhull_(Javascript)?action=history&offset=20120410175256
+	https://en.literateprograms.org/Quickhull_(Javascript)?action=history&offset=20120410175256
 
 	Permission is hereby granted, free of charge, to any person obtaining
 	a copy of this software and associated documentation files (the
@@ -1899,7 +1899,7 @@
 	TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-	Retrieved from: http://en.literateprograms.org/Quickhull_(Javascript)?oldid=18434
+	Retrieved from: https://en.literateprograms.org/Quickhull_(Javascript)?oldid=18434
 	*/
 
 	(function () {
@@ -2011,7 +2011,7 @@
 						minLng = pt.lng;
 					}
 				}
-				
+
 				if (minLat !== maxLat) {
 					minPt = minLatPt;
 					maxPt = maxLatPt;
@@ -2021,7 +2021,7 @@
 				}
 
 				var ch = [].concat(this.buildConvexHull([minPt, maxPt], latLngs),
-									this.buildConvexHull([maxPt, minPt], latLngs));
+					this.buildConvexHull([maxPt, minPt], latLngs));
 				return ch;
 			}
 		};
@@ -2052,12 +2052,12 @@
 		_circleFootSeparation: 25, //related to circumference of circle
 		_circleStartAngle: Math.PI / 6,
 
-		_spiralFootSeparation:  28, //related to size of spiral (experiment!)
+		_spiralFootSeparation: 28, //related to size of spiral (experiment!)
 		_spiralLengthStart: 11,
 		_spiralLengthFactor: 5,
 
 		_circleSpiralSwitchover: 9, //show spiral instead of circle from this marker count upwards.
-									// 0 -> always spiral; Infinity -> always circle
+		// 0 -> always spiral; Infinity -> always circle
 
 		spiderfy: function () {
 			if (this._group._spiderfied === this || this._group._inZoomAnimation) {
@@ -2276,7 +2276,7 @@
 				if (m.clusterHide) {
 					m.clusterHide();
 				}
-				
+
 				// Vectors just get immediately added
 				fg.addLayer(m);
 
@@ -2296,7 +2296,7 @@
 				//Move marker to new position
 				m._preSpiderfyLatlng = m._latlng;
 				m.setLatLng(newPos);
-				
+
 				if (m.clusterShow) {
 					m.clusterShow();
 				}
@@ -2307,7 +2307,7 @@
 					legPath = leg._path;
 					legPath.style.strokeDashoffset = 0;
 					//legPath.style.strokeOpacity = finalLegOpacity;
-					leg.setStyle({opacity: finalLegOpacity});
+					leg.setStyle({ opacity: finalLegOpacity });
 				}
 			}
 			this.setOpacity(0.3);
@@ -2370,7 +2370,7 @@
 					legPath = leg._path;
 					legLength = legPath.getTotalLength() + 0.1;
 					legPath.style.strokeDashoffset = legLength;
-					leg.setStyle({opacity: 0});
+					leg.setStyle({ opacity: 0 });
 				}
 			}
 
@@ -2438,7 +2438,7 @@
 			if (!L.Browser.touch) {
 				this._map.getRenderer(this);
 				//Needs to happen in the pageload, not after, or animations don't work in webkit
-				//  http://stackoverflow.com/questions/8455200/svg-animate-with-dynamically-added-elements
+				//  https://stackoverflow.com/questions/8455200/svg-animate-with-dynamically-added-elements
 				//Disable on touch browsers as the animation messes up on a touch zoom and isn't very noticable
 			}
 		},
@@ -2499,7 +2499,7 @@
 				if (layer.clusterShow) {
 					layer.clusterShow();
 				}
-					//Position will be fixed up immediately in _animationUnspiderfy
+				//Position will be fixed up immediately in _animationUnspiderfy
 				if (layer.setZIndexOffset) {
 					layer.setZIndexOffset(0);
 				}
@@ -2565,7 +2565,7 @@
 				// Dumb process that flags multiple times upper parents, but still
 				// much more efficient than trying to be smart and make short lists,
 				// at least in the case of a hierarchy following a power law:
-				// http://jsperf.com/flag-nodes-in-power-hierarchy/2
+				// https://jsperf.com/flag-nodes-in-power-hierarchy/2
 				parent = layers[id].__parent;
 				while (parent) {
 					parent._iconNeedsUpdate = true;
@@ -2623,5 +2623,4 @@
 	});
 
 
-	}(window, document));
-        
+}(window, document));

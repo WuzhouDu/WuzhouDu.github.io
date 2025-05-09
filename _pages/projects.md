@@ -60,9 +60,9 @@ author_profile: true
 *Operating System Course Project*, October 2022
 - Utilized C POSIX library function to fork a child process to execute over 15 different test programs, each with a different signal raised, after which the parent process gave feedback on the child process execution. The program passed all 15 cases.
 - Traced the Linux kernel source code to self-implemented `fork` and `wait` functions, with which the program finished similar tasks to the above and passed all cases.
-- Developed a thread pool with a FIFO queue using pthread and mutex locks to handle many HTTP requests. It achieved a throughput mean of 7151.03 requests per second with 10 threads.
+- Developed a thread pool with a FIFO queue using pthread and mutex locks to handle many https requests. It achieved a throughput mean of 7151.03 requests per second with 10 threads.
 
 ## Photography Reservation System
 *Database Course Project*, March 2022
 - Utilized MySQL to design and implement a database system for a photography reservation system, including but not limited to the user table, the photographer table, the reservation table, and the photo table, with the strategy of maintaining the referential integrity and the data consistency.
-- Utilized Axios for seamless HTTP communication between the frontend and server; harnessed Express to expertly manage server-side processes and handle database exceptions and normal workflow, detecting less than 1% exception occurrence during 5000 tests.
+- Utilized Axios for seamless https communication between the frontend and server; harnessed Express to expertly manage server-side processes and handle database exceptions and normal workflow, detecting less than 1% exception occurrence during 5000 tests.
