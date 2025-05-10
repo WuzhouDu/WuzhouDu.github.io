@@ -12,7 +12,7 @@ title                    : "Wuzhou Du"
 title_separator          : "-"
 name                     : &name "Wuzhou Du"
 description              : &description "Personal Website"
-url                      : //wuzhoudu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://wuzhou.is-a.dev # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "WuzhouDu/WuzhouDu.github.io"
 
