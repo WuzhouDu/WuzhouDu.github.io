@@ -4,6 +4,14 @@ title: "Experience"
 author_profile: true
 ---
 
+## Software Engineer Intern
+*[Meta](https://www.meta.com/)*, June 2025 – September 2025
+*WhatsApp Client Developer Infra Team | PHP/Hack, BLOB, Log System*
+-	Improved the log system upload endpoint from all-or-nothing log redaction to granular, regex-based masking of sensitive data, bringing more useful information from 200 million uploaded log files per day.
+-	Replaced manual sampling of crashlogs with automated rules to mitigate service overloads, decreasing 60% of manual intervention for sampling and avoiding pipeline backlogs.
+-	Built a reliable log spike detection and notification system to improve the developer experience and decrease the on-call efforts.
+
+
 ## Flutter Mobile Software Developer
 *[SpeechX Technology](https://www.speechx.cn/en/)*, July 2023 – September 2023
 *Flutter Software Engineer Intern | Dart, SQLite, Git*

@@ -6,10 +6,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I just completed my bachelor degree of Computer Science and Engineering at [The Chinese University of Hong Kong, Shenzhen (CUHKSZ)](https://www.cuhk.edu.cn/en). Further, I will pursue the [Master of Computer Science and Engineering program](https://cse.ucsd.edu/graduate/degree-programs/ms-program) in [University of California San Diego](https://www.ucsd.edu/) this fall.
+Hi folks, I'm Wuzhou, a current student in the [Master of Computer Science and Engineering program](https://cse.ucsd.edu/graduate/degree-programs/ms-program) of [University of California San Diego](https://www.ucsd.edu/).
 
-I'm interested in software development and have experience in web application development. My technical skills include MERN(MongoDB, Express, React, Node.js), Flutter and C/C++.
+I'm interested in software development and have experience in web and infra development. My technical skills include MERN(MongoDB, Express, React, Node.js), Flutter, PHP/Hack, C/C++, and Golang.
 
-Now I'm training my skills in C++.
+This summer, I had the opportunity to intern at [Meta](https://www.meta.com/) as a Software Engineer Intern, where I worked on WhatsApp's client developer infra team. I really loved the experience here and it exposed me to the infra development of a large-scale product for the first time.
 
-I'm open to any opportunity in software development. If you are interested in my profile, please feel free to contact me via email or LinkedIn.
+Now I'm open to any future full-time opportunity in software development after my graduation. If you are interested in my profile, please feel free to contact me via email or LinkedIn.

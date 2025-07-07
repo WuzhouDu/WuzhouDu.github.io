@@ -3,6 +3,10 @@ permalink: /projects/
 title: "Projects"
 author_profile: true
 ---
+## TritonTube
+TritonTube, March 2025 – May 2025
+- Utilized **ffmpeg** to generate the multiple-bitrate video files for **DASH** (dynamic adaptive streaming over HTTP) implementation; distributed the media files to different storage servers using **gRPC** and **continuous hashing** to increase **load balance** and the **scalability** of the system.
+- Distributed the metadata of the video to different servers using **etcd** and **RAFT** to allow up to **half of the machine** failures, greatly improving the **reliability** of the system.
 
 ## CMU 15-445 Database Systems
 *[Buffer Pool Manager](https://15445.courses.cs.cmu.edu/spring2023/project1/)*, August 2024
